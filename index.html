@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaydev's Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" href="/Assests/img/logo.png" type="image/png" width="100px">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="demo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Nova+Square&display=swap"
+        rel="stylesheet">
+    <!-- ---Bootsratp  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+<!-- \\\\\\\Alert Box ]\\\\\\\\ -->
+<div id="backdrop" class="backdrop"></div>
+
+
+<div id="customAlert" class="custom-alert">
+  <div class="alert-content">
+    <span class="close"  onclick="closeAlert()">&times;</span>
+    <h2>Finding Gujarati <strong> Study Materials  </strong>?</h2>
+    <p style="font-family: cursive;">Checkout our website, for that ! click the button 'GO'</p>
+    <div class="img-card study">
+      <!-- Add your image and other content here -->
+<img src="https://1.bp.blogspot.com/-sqw52tpWX0Q/XQUV3aokZrI/AAAAAAAAK6Y/cg3JT60bF3YM9LtWa44V9B3TIG0wLAoBQCLcBGAs/w680/study-material.png" alt="Free Study Materials !!"><br>'https://book.1jm2.repl.co/'
+    </div>
+    <button onclick="redirectToWebsite()" class="btn-success"> <a href="https://book.1jm2.repl.co/"><i class="fab fa-gofore"></i> <i class="fab fa-opera"></i></a></button>
+  </div>
+</div>
+<!-- Ends  -->
+
+    <header>
+        <h1 id="header">Jaydev's Web</h1> <br> <button class="btn btn-primary" id="dropdown" onclick="dropdown()">Show
+            Description <i class="fas fa-sort-down"></i></button><br>
+            <marquee behavior="" direction="">Visit : <a href="http://book.1jm2.repl.co/" target="_blank" style="color: blue; text-decoration: none;">Our Free Latest Book Storage For 12<sup>th</sup> Science 2024-25 Gujarati</a></marquee>
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <a href="#" onclick="closeSidebar()" class="close-btn"><i class="fas fa-times"></i></a>
+            <div class="header">
+                <h3>Main Menu </h3>
+            </div>
+
+        
+
+
+            <!-- After <header></header> -->
+            <div class="options">
+                <a href="/index.html" target="_self" rel="noopener noreferrer">
+                    <div class="boxy"><i class="fas fa-home"></i>Home</div>
+                </a>
+                <a href="mailto:jm.1webs@gmail.com">
+                    <div class="boxy"><i class="fas fa-envelope"></i>Contact</div>
+                </a>
+                <a href="/Assests/Screens/menu/aboutus.html" target="_self" rel="noopener noreferrer">
+                    <div class="boxy"><i class="far fa-question-circle"></i>About Us</div>
+                </a>
+                <a href="/Assests/Screens/Stds/12thsci.html" target="_self" rel="noopener noreferrer">
+                    <div class="boxy"><i class="fas fa-store-alt"></i>Book Store</div>
+                </a>
+                <a href="/Assests/login-signup/signup.html" target="_self" rel="noopener noreferrer">
+                    <div class="boxy"><i class="fas fa-user-alt"></i>Profile</div>
+                </a>
+                <a href="/Assests/Screens/menu/settings.html" target="_self" rel="noopener noreferrer">
+                    <div class="boxy"> <i class="far fa-edit"></i>Settings</div>
+                </a>
+                <a href="/Assests/login-signup/login.html">
+                    <div class="boxy"><i class="fas fa-sign-in-alt"></i>Login</div>
+                </a>
+                <a href="https://www.1jm2.repl.co/" target="_self" rel="noopener noreferrer">
+                    <div class="boxy" id="logout"><i class="fas fa-sign-out-alt"></i>Logout</div>
+                </a>
+
+
+            </div>
+
+        </div>
+        <!-- Open button for the sidebar -->
+        <div class="open-btn" onclick="openSidebar()" id="openbtn">☰</div>
+
+    </header>
+
+    </div>
+    <div class="card" id="card">
+        <img src="https://img.freepik.com/free-vector/clip-board-paper-pencil-cartoon-icon-illustration-education-object-icon-concept-isolated-flat-cartoon-style_138676-2152.jpg?size=626&ext=jpg&ga=GA1.1.1591623438.1697909505&semt=ais"
+            alt="Image 1">
+        <div class="card-content">
+            <h2>Generate <br> <strong>Question Paper</strong></h2>
+            <hr>
+            <p id="para"  class="para">Create exceptional question papers effortlessly with Jaydev's Web Star Paper. Our user-friendly
+                platform allows you to generate customized exam papers in PDF format for free. Empower educators and
+                streamline the assessment process with our intuitive tools, ensuring a seamless experience in crafting
+                quality questions for academic excellence.</p>
+            <a href="/star.html" class="view-button">Generate</a>
+        </div>
+    </div>
+    <div class="card" id="card">
+<img src="https://pbs.twimg.com/media/Fb6DKJWUYAEBUj5?format=jpg" alt="Study materials" style="height: 340px;">      
+        <div class="card-content">
+            <h2> Our Latest Book-Storage </h2>
+            <hr>
+            <p id="para"  class="para">Embark on a nostalgic journey through JayDevs Web, where timeless design meets innovative
+                solutions. Our old website retains its charm while offering a glimpse into our rich history of web
+                development. Explore the legacy, experience the evolution, and discover the foundation of JayDevs Web
+                that has stood the test of time.</p>
+            <a href="https://book.1jm2.repl.co/" class="view-button">Visit <i class="fas fa-search-location"> </i></a>
+        </div>
+    </div>
+    <div class="card" id="card">
+        <img src="https://img.freepik.com/free-vector/people-playing-video-game-mobile-phone-computer-men-women-playing-console-using-various-hardware-devices-laptop-tablet-flat-vector-illustration-cross-platform-play-concept_74855-25242.jpg?size=626&ext=jpg&ga=GA1.1.1591623438.1697909505&semt=ais"
+            alt="Image 1">
+        <div class="card-content">
+            <h2>Our Game Section </h2>
+            <hr><i class="fa-down"></i>
+            <p id="para"  class="para">Explore our captivating game section, where thrilling adventures and immersive challenges
+                await. Dive into a diverse collection of games that cater to every gaming preference, from action-packed
+                epics to mind-bending puzzles. Whether you're a seasoned gamer or a casual player, our carefully curated
+                selection guarantees an exhilarating experience. Join the fun and discover a world of entertainment
+                right at your fingertips.</p>
+            <a href="https://www.1jm2.repl.co/html/gameweb.html" class="view-button">Play Game <i
+                    class="fas fa-gamepad"></i></a>
+        </div>
+    </div>
+    <div class="card" id="card">
+        <img src="https://img.freepik.com/free-vector/purple-background-with-quiz-word-colorful-people_52683-126.jpg?size=626&ext=jpg&ga=GA1.1.1591623438.1697909505&semt=sph"
+            alt="">
+        <div class="card-content">
+            <h2>Make Quiz (Old) <i class="fas fa-passport"></i></h2>
+            <hr>
+            <p id="para"  class="para">Embark on a nostalgic journey through JayDevs Web, where timeless design meets innovative
+                solutions. Our old website retains its charm while offering a glimpse into our rich history of web
+                development. Explore the legacy, experience the evolution, and discover the foundation of JayDevs Web
+                that has stood the test of time.</p>
+            <a href="https://abc.1jm2.repl.co/" class="view-button">View </a>
+        </div>
+    </div>
+    <div class="card" id="card">
+        <img src="https://img.freepik.com/free-vector/orange-blue-background-list_23-2149020601.jpg?size=626&ext=jpg&ga=GA1.1.1591623438.1697909505&semt=ais"
+            alt="Image 1">
+        <div class="card-content">
+            <h2>Make To-Do List <i class="far fa-list-alt"></i></h2>
+            <hr>
+            <p id="para"  class="para">Elevate your productivity with our cutting-edge MakeToDo web app. Craft personalized to-do
+                lists effortlessly, prioritize tasks, and stay organized with intuitive features. Seamlessly accessible
+                from any device, our user-friendly interface ensures a smooth planning experience. Supercharge your
+                efficiency and conquer your goals with the MakeToDo web app – your ultimate companion in task
+                management.</p>
+            <a href="https://todo.1jm2.repl.co/" class="view-button">View </a>
+        </div>
+    </div>
+    <div class="card" id="card">
+        <img src="https://img.freepik.com/premium-photo/coding-programming-site-application-laptop_272306-132.jpg?size=626&ext=jpg&ga=GA1.1.1591623438.1697909505&semt=ais"
+            alt="Image 1">
+        <div class="card-content">
+            <h2><i>Download</i> <br> Java Programmes</h2>
+            <p id="para"  class="para">Experience seamless Java programming with our user-friendly platform. Download our Java program
+                effortlessly, unlocking a world of powerful coding tools and libraries. Elevate your development journey
+                with ease and efficiency – start coding today!</p>
+            <a href="https://drive.google.com/file/d/1luodrxAy3kLN2Ys33IidDTZPvYI-nFZI/view?usp=drive_link"
+                class="view-button">Download</a>
+        </div>
+    </div>
+   
+
+    <div class="card" id="card">
+        <img src="https://img.freepik.com/free-vector/isometric-university-concept_23-2148174555.jpg?size=626&ext=jpg&ga=GA1.1.1591623438.1697909505&semt=ais"
+            alt="Image 2">
+        <div class="card-content">
+            <h2>Visit Study Library</h2>
+            <hr>
+            <p id="para" class="para">Dive into a world of knowledge with our online study materials library – a comprehensive
+                repository for learners of all levels. Access a diverse range of educational resources, from textbooks
+                to multimedia content, conveniently stored in one centralized platform. Enhance your learning experience
+                by exploring our curated collection, available anytime, anywhere. Unlock the doors to academic success
+                with our dynamic online study materials library.</p>
+
+            <a href="https://studylibrary.1jm2.repl.co/" class="view-button">Visit Library</a>
+        </div>
+    </div>
+    </div>
+    <div class="card" id="card">
+        <img src="https://img.freepik.com/free-vector/tiny-people-with-guide-instructions-handbooks-flat-vector-illustration-cartoon-characters-reading-user-manual-guidebook-guidance-help-book-with-instructions-use-concept_74855-10173.jpg?size=626&ext=jpg&ga=GA1.1.1591623438.1697909505&semt=ais"
+            alt="">
+        <div class="card-content">
+            <h2>Manual ( Old ) </h2>
+            <hr>
+            <p id="para" class="para">Unlock the secrets of successful web development with our Website Guide PDF. Packed with
+                actionable insights, this downloadable resource is your roadmap to creating stunning and efficient
+                websites. Whether you're a novice or an expert, elevate your skills and transform your digital presence
+                today.</p>
+            <a href="https://abc.1jm2.repl.co/screens/info.html" class="view-button">Download <i
+                    class="fas fa-download"></i></a>
+        </div>
+    </div>
+
+    <div class="card" id="card">
+        <img src="https://img.freepik.com/premium-vector/illustration-vector-graphic-cartoon-character-download_516790-21.jpg?w=740"
+            alt="Image 2">
+        <div class="card-content">
+            <h2>Download YT : Videos</h2>
+            <hr>
+            <p id="para"  class="para">Explore the convenience of free YouTube video downloads with JayDev's Web. Our user-friendly
+                platform empowers you to effortlessly save your favorite content for offline viewing. Simply navigate to
+                our website, paste the YouTube link, and experience the freedom to enjoy videos anytime, anywhere.
+                Elevate your streaming experience with JayDev's Web and discover the ease of downloading YouTube videos
+                hassle-free.</p>
+
+            <a href="https://www.ssemble.com/en6/youtube-downloader/" class="view-button">Download</a>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        function openSidebar() {
+            var container = document.getElementById('container');
+            var header = document.getElementById('header');
+            var openbtn = document.getElementById('openbtn');
+
+            document.querySelector('.sidebar').style.left = '0';
+            document.body.classList.remove('blur');
+            container.style.filter = ('blur(16px)');
+            header.style.filter = ('blur(2px)');
+            openbtn.style.display = 'none';
+
+        }
+
+        function closeSidebar() {
+            var container = document.getElementById('container');
+            var header = document.getElementById('header');
+            var openbtn = document.getElementById('openbtn');
+
+            document.querySelector('.sidebar').style.left = '-250px';
+            document.body.classList.remove('blur');
+            container.style.filter = ('blur(0px)');
+            header.style.filter = ('blur(0.2px)');
+            openbtn.style.display = 'block';
+        }
+
+        function dropdown() {
+            // Get all elements with the class "para"
+            var paragraphs = document.querySelectorAll('.para');
+
+            // Iterate through each paragraph
+            paragraphs.forEach(function (paragraph) {
+                // Toggle the display property
+                if (paragraph.style.display === 'none' || paragraph.style.display === '') {
+                    paragraph.style.display = 'block';
+                } else {
+                    paragraph.style.display = 'none';
+                }
+            });
+
+
+        }
+    </script>
+    <script>
+
+
+        function readmore() {
+            var describe = document.getElementById('describe');
+
+            var readmore = document.getElementById('readmore');
+
+            describe.style.display = 'block';
+            readmore.style.display = 'none';
+        }
+
+        function readless() {
+            var describe = document.getElementById('describe');
+
+            var readless = document.getElementById('readless');
+
+            describe.style.display = 'none';
+            readmore.style.display = 'block';
+        }
+    </script>
+<script src="/Assests/js/alert.js"></script>
+</body>
+
+</html>

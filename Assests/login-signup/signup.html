@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="/Assests/css/login.css">
+
+    <link rel="stylesheet" href="//cdn.tutorialjinni.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="//cdn.tutorialjinni.com/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+<link rel="stylesheet" href="//g.tutorialjinni.com/mojoaxel/bootstrap-select-country/dist/css/bootstrap-select-country.min.css" />
+
+</head>
+<body>
+    <h1>Login</h1>
+    <form action="/Assests/Screens/success.html">
+     
+      <div class="row">
+        <label for="username">Username <i class="far fa-user"></i>
+        </label>
+        <input type="text" name="username" required>
+      </div>
+       <div class="row">
+        <label for="email" >Email <i class="far fa-envelope"></i></label>
+        <input type="email" name="email" autocomplete="off" placeholder="email@example.com" required>
+      </div>
+      <div class="row">
+        <label for="password">Password <i class="fas fa-key"></i></label>
+        <input type="password" name="password" required>
+      </div>
+      <div class="row">
+        <label for="password">Country <i class="fas fa-globe-asia"></i></label>
+        <select class="selectpicker countrypicker" data-flag="true"></select>    </div>
+      <button type="submit">Sign Up</button>
+    </form>
+
+    
+<script src="//cdn.tutorialjinni.com/jquery/3.6.1/jquery.min.js"></script>
+<script src="//cdn.tutorialjinni.com/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="//cdn.tutorialjinni.com/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+<script src="//g.tutorialjinni.com/mojoaxel/bootstrap-select-country/dist/js/bootstrap-select-country.min.js"></script>
+</body>
+</html>

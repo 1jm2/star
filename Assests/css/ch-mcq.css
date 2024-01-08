@@ -1,0 +1,246 @@
+@font-face {
+    font-family: guj;
+    src: url(/Assests/fonts/guj.woff);
+  }
+  
+ 
+  
+  body {
+    background: linear-gradient(lightyellow,rgb(106, 106, 238),blue);
+  }
+  
+  /* ...................MCQ.CSS......................... */
+  
+  
+  .container {
+    counter-reset: boxCounter;
+    margin-top: 20px;
+    font-family: guj;
+    font-size: 20px;
+    user-select: none;
+    overflow: hidden;
+  }
+  
+  @font-face {
+    font-family: guj;
+    src: url(/Assests/fonts/guj.woff);
+  }
+  
+  .custom-list {
+    list-style: none;
+  
+    position: relative;
+    display: inline;
+    /* Hide the default list style */
+  }
+  
+  .custom-list li {
+    display: inline-block;
+    counter-increment: custom-counter;
+    /* Increment the counter */
+    margin-right: 10px;
+    /* Adjust spacing between items */
+  }
+  
+  .custom-list li::before {
+    content: counter(custom-counter, upper-alpha) ". ";
+  
+    /* Use lowercase alphabetical characters with a period */
+  }
+  
+  
+  .selectable {
+    border: 2px solid rgb(170, 168, 168);
+    margin: 10px;
+    padding: 5px;
+    text-align: left;
+  background: white;
+  font-family: guj;
+    cursor: pointer;
+    border-radius: 10px;
+    text-transform: capitalize;
+  }
+  
+  .selectable::before {
+    counter-increment: boxCounter;
+    content: counter(boxCounter);
+  
+    background: #0070A8;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  
+  .selected {
+    border: 2px solid rgba(36, 18, 87, 0.514);
+  }
+  
+  .custom-list li {
+    list-style-type: upper-alpha;
+    text-transform: capitalize;
+  
+  }
+  
+  .answer {
+    display: none;
+    /* Initially hide the answer paragraph */
+    margin-top: -10px;
+    text-transform: capitalize;
+  }
+  
+  @media print {
+    .selected {
+      border: 2px solid rgba(36, 18, 87, 0.514);
+    }
+  
+    .selectable,
+    .selected {
+      display: block;
+      
+    }
+  
+    .answer:last-of-type {
+      display: block;
+      /* Display the answer paragraph at the end of the page */
+    }
+  
+   
+   
+    .last-page {
+      page-break-after: always;
+    }
+  }
+  div .btn-next {
+    font-family: guj;
+    font-size: 20px;
+    font-weight: 600;
+    overflow: hidden;
+    position: fixed;
+    top: 0; 
+    width: 20%;
+    left: 277px;
+    color: #fff;
+    background: rgb(57, 57, 255);
+    align-items: center;
+    border-radius: 5px;
+    padding: 4px;
+  }
+  
+  /* ... Your existing CSS ... */
+  
+  .answer {
+    
+    /* Initially hide the answer paragraph */
+    margin-top: -7px;
+    font-weight: 700;
+  }
+  
+  @media print {
+  
+    /* Hide answers in the print view when the checkbox is unchecked */
+    #showAnswers:not(:checked)~.container .answer {
+      display: none;
+    }
+    /* Other print styles... */
+  }
+  
+  
+  .counter {
+    font-family: guj;
+    font-size: 20px;
+    font-weight: 600;
+    overflow: hidden;
+    height: 30px;
+    position: fixed;
+    border: 1px solid yellow;
+    top: -1px; 
+    width: 40%;
+    left: 17px;
+  
+  }
+  
+  #showAnswers {
+    border: 2px solid burlywood;
+    font-size: 2px;
+  
+  }
+  .a, .b, .c, .d {
+    font-family: guj;
+  }
+  .a, .b {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+}
+.b {
+    margin-left: 10px;
+}
+  
+.c, .d {
+    justify-content: space-evenly;
+
+}
+.a {
+    margin-left: -30px;
+}
+.c {
+    margin-left: 10px;
+}
+  .mainone,
+  .maintwo {
+    height: 300px;
+    overflow: auto;
+    border: 1px solid grey;
+    border-radius: 30px;
+    width: 98%;
+    top: 20px;
+    position: relative;
+  }
+  
+  ::-webkit-scrollbar {
+    background: linear-gradient(yellow, lime, blue);
+    border-radius: 20px;
+  
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 47, 203);
+    border-radius: 30px;
+    width: 20px;
+  }
+  
+  
+  
+  
+  h4 div {
+    font-family: guj;
+    text-align: center;
+    margin-top: 30px;
+    border: 2px solid transparent;
+    margin-right: 70px;
+    margin-left: 10px;
+    border-radius: 5px;
+    background: #332f2f;
+    color: white;
+    padding: 5px;
+  }
+  h4 div:hover {
+    color: rgb(0, 0, 0);
+    background: white;
+    font-size: 25px;
+  }
+  
+  
+  .mainone {
+    display: none;
+  }
+  
+  /* Diwali BTN  */
+  
+  
+  /* ...............Subs CSS.................  */
+  

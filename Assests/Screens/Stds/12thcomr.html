@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/Assests/css/style.css">
+  <link rel="stylesheet" href="/Assests/css/sidebar.css">
+  <link rel="stylesheet" href="/Assests/css/popup.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+
+  <div id="downloadNotification">
+    <i class="fas fa-check-circle"></i> Download Complete <span id="closeBtn"
+      onclick="closeNotification()">&times;</span>
+  </div>
+
+  <a href="/Assests/Screens/sidebar.html" target="_self" rel="noopener noreferrer">
+    <div class="sidebar"> <a href="#popupsidebar" target="_self" rel="noopener noreferrer"><i
+          class="fas fa-bars"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa"
+        style="text-align: center; align-items: center;">Star paper</i><a href="https://www.1jm2.repl.co/" target="_self"
+        rel="noopener noreferrer"> <i style=" position: absolute; right: 20px; font-size: 26px;"
+          class="fas fa-backspace" id="close"></i></a></div>
+  </a>
+  <div class="main-container" id="main">
+  <div class="box-std-top all" style="color: black;">
+                            <a href="/index.html" target="_self" >All                     </a>                                   </div> 
+  <div class="box-std-top"> <a href="/Assests/Screens/Stds/12thsci.html" target="_self" >12<sup>th</sup><br>Sci  </a>                                   </div>                        
+  <div class="box-std-top"> <a href="/Assests/Screens/Stds/11thsci.html" target="_self" >11<sup>th</sup><br>Sci  </a>                                   </div>
+  <div class="box-std-top" style="background: var(--bgcolor);"> <a href="/Assests/Screens/Stds/12thcomr.html" target="_self"  style="color: white;"  >12<sup>th</sup><br>Comm </a>                                   </div>
+  <div class="box-std-top" > <a href="/Assests/Screens/Stds/11thcomr.html" target="_self" >11<sup>th</sup><br>Comm </a>                                   </div>
+  <div class="box-std-top"> <a href="/Assests/Screens/Stds/10th.html" target="_self" >10<sup>th</sup>         </a>                                   </div>
+  <div class="box-std-top"> <a href="/Assests/Screens/Stds/9th.html" target="_self" >9<sup>th</sup>          </a>                                   </div>
+  <div class="box-std-top" style="color: var(--text); "> <a href="/Assests/Screens/Stds/8th.html" target="_self" >8<sup>th</sup>          </a>                                   </div>
+  </div>
+  <!-- ------------------------- -->
+  <div class="child toggle" id="toggle"><i class="fas fa-lock" id="toggle" onclick="toggle()"></i>&nbsp; Hide Bar </div>
+  <div class="child toggle" id="toggleafter"><i class="fas fa-unlock-alt" id="toggleafteri" onclick="toggleafteri()"></i>&nbsp; Show Bar </div>
+  
+  <div class="child" id="aftermain">12<sup>th </sup> &nbsp; (Gujarati) - Star Papers Ltd.</div>
+
+  <div class="child" data-box-id="box1">1.
+    <a href="#" target="_self" rel="noopener noreferrer">
+      <div class="box">
+        <img src="https://t4.ftcdn.net/jpg/02/22/39/79/240_F_222397934_G2Ue0twHnDneEQn8loRZ69Wv4VLuTwTZ.jpg" alt="ig">
+        <div class="text">
+          12- Statistics (Guj) <p>Version 1.0</p>
+          <i class="fas fa-cloud-download-alt" style="font-size: 10px;"></i> <span class="installText">Install
+            Now</span>
+        </div>
+      </div>
+    </a>
+  </div>
+  <!-- -----------  -->
+  <div class="child" data-box-id="box2">2.
+    <a href="#" target="_self" rel="noopener noreferrer">
+      <div class="box">
+        <img src="https://t3.ftcdn.net/jpg/06/58/98/04/240_F_658980435_6IcrkdWjTRhyNT64lQWH5kKVvfXMifi3.jpg" alt="ig">
+        <div class="text">
+          12- Economics (Guj) <p>Version 1.0</p>
+          <i class="fas fa-cloud-download-alt" style="font-size: 10px;"></i> <span class="installText">Install
+            Now</span>
+        </div>
+      </div>
+    </a>
+  </div>
+  <!-- -----------  -->
+  <div class="child" data-box-id="box3">3.
+    <a href="#" target="_self" rel="noopener noreferrer">
+      <div class="box">
+        <img src="https://t4.ftcdn.net/jpg/03/76/53/39/240_F_376533916_t6VIlSMniYMivbSJRpYr47uoRns5VAfF.jpg" alt="ig">
+        <div class="text">
+          12- BA (Guj) <p>Version 1.0</p>
+          <i class="fas fa-cloud-download-alt" style="font-size: 10px;"></i> <span class="installText">Install
+            Now</span>
+        </div>
+      </div>
+    </a>
+  </div>
+  <!-- -----------  -->
+   <!-- Side Bar here ??? -->
+   <div id="popupsidebar" class="popup-container popup-style-2">
+    <div class="popup-content">
+      <a href="#" class="close">&times;</a>
+
+      <div class="container">
+        <div class="header">
+          <h3>Main Menu </h3>
+        </div>
+
+        <hr> <br>
+
+
+        <!-- After <header></header> -->
+
+        <a href="/index.html" target="_self" rel="noopener noreferrer">
+          <div class="boxy"><i class="fas fa-home"></i>Home</div>
+        </a>
+        <a href="mailto:jm.1webs@gmail.com">
+          <div class="boxy"><i class="fas fa-envelope"></i>Contact</div>
+        </a>
+        <a href="/Assests/Screens/menu/aboutus.html" target="_self" rel="noopener noreferrer">
+          <div class="boxy"><i class="far fa-question-circle"></i>About Us</div>
+        </a>
+        <a href="/Assests/Screens/Stds/12thsci.html" target="_self" rel="noopener noreferrer">
+          <div class="boxy"><i class="fas fa-store-alt"></i>Book Store</div>
+        </a>
+        <a href="/Assests/login-signup/signup.html" target="_self" rel="noopener noreferrer">
+          <div class="boxy"><i class="fas fa-user-alt"></i>Profile</div>
+        </a>
+        <a href="/Assests/Screens/menu/settings.html" target="_self" rel="noopener noreferrer">
+          <div class="boxy"> <i class="far fa-edit"></i>Settings</div>
+        </a>
+        <a href="/Assests/login-signup/login.html">
+          <div class="boxy"><i class="fas fa-sign-in-alt"></i>Login</div>
+        </a>
+        <a href="https://www.1jm2.repl.co/" target="_self" rel="noopener noreferrer">
+          <div class="boxy" id="logout"><i class="fas fa-sign-out-alt"></i>Logout</div>
+        </a>
+
+
+
+      </div>
+      <div class="footer"><a href="/index.html" target="_blank" rel="noopener noreferrer">Star Papers - An AI
+          Website</a> <br>
+        <li>&starf; all rights are reserved 2023-24. &starf;</li>
+      </div>
+      <!-- .>>>>>>>>>>>>>>>>> Script Manager <<<<<<<<<<<<<<<<<<<.  -->
+    </div>
+  </div>
+
+  <!-- .>>>>>>>>>>>>>>>>> Script Manager <<<<<<<<<<<<<<<<<<<.  -->
+
+  <script src="/Assests/js/changetext.js"></script>
+  <script src="/Assests/js/hidebar.js"></script>
+  <script src="/Assests/js/hidebar.js"></script>
+
+</body>
+
+</html>
